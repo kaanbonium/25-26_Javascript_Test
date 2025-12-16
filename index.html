@@ -43,7 +43,7 @@
 
 					<!-- Paragraphs -->
 					<h3>Basic Directions</h3>
-					<p id="direction">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<p id="directions">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
 					<hr>
 
 					<h3>Tasks</h3>
@@ -80,8 +80,8 @@
                     <button onclick="blue1()">Blue</button>
                     <button onclick="green1()">Green</button>
 					
-					
-					<table class="table table-striped">
+					<!-- Add id table1 to this so the task2 code can change the background color -->
+					<table id="table1" class="table table-striped">
 						<thead>
 							<tr>
 								<th>#</th>
@@ -135,6 +135,7 @@
 							<td><input type="text" name="email" placeholder="Enter your email address." id="email"></td>
 						</tr>
 						<tr>
+                            <!-- add an onclick function to it, so my task5 stuff works (5) -->
 							<td colspan="2"><button onclick="charCheck()">Submit</button></td>
 						</tr>
 					</table>

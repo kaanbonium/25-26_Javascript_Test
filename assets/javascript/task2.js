@@ -1,14 +1,17 @@
 /* Put code for the task below */
 
 function red1(){
-    document.getElementById("table1").style.color = "red"
+    // make the background red
+    document.getElementById("table1").style.backgroundColor = "red"
 
 }
 
 function blue1(){
-    document.getElementById("table1").style.color = "blue"
+    // make the background blue
+    document.getElementById("table1").style.backgroundColor = "blue"
 }
 
 function green1(){
-    document.getElementById("table1").style.color = "green"
+    // make the background green
+    document.getElementById("table1").style.backgroundColor = "green"
 }

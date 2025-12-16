@@ -1,39 +1,32 @@
-/* Put code for the task below */
 function charCheck() {
-    len = document.getElementById("fullName").value.length;
-    // Minimum length 8
-    if (len < 1) {
-        document.getElementById("fullName").innerHTML = "<font color='red'>Password must be at least 8 characters</font>";
+
+    // for the name
+    // if statement, so if value is empty, the background is red. if it is anything else, its back to white!
+    if (document.getElementById("fullName").value == "") {
+        document.getElementById("fullName").style.backgroundColor = "red";
     } else {
-        document.getElementById("fullName").innerHTML = "<font color='green'>Password is strong</font>";
+        document.getElementById("fullName").style.backgroundColor = "white";
+    }
+    // for the address
+    // if statement, so if value is empty, the background is red. if it is anything else, its back to white!
+    if (document.getElementById("address").value == "") {
+        document.getElementById("address").style.backgroundColor = "red";
+    } else {
+        document.getElementById("address").style.backgroundColor = "white";
+    }
+    // for the phone
+    // if statement, so if value is empty, the background is red. if it is anything else, its back to white!
+    if (document.getElementById("phone").value == "") {
+        document.getElementById("phone").style.backgroundColor = "red";
+    } else {
+        document.getElementById("phone").style.backgroundColor = "white";
+    }
+    // for the email
+    // if statement, so if value is empty, the background is red. if it is anything else, its back to white!
+    if (document.getElementById("email").value == "") {
+        document.getElementById("email").style.backgroundColor = "red";
+    } else {
+        document.getElementById("email").style.backgroundColor = "white";
     }
 
-    len = document.getElementById("address").value.length;
-    // Minimum length 8
-    if (len < 1) {
-        document.getElementById("length").innerHTML = "<font color='red'>Password must be at least 8 characters</font>";
-    } else {
-        document.getElementById("length").innerHTML = "<font color='green'>Password is strong</font>";
-
-
-    }
-    len = document.getElementById("phone").value.length;
-    // Minimum length 8
-    if (len < 1) {
-        document.getElementById("length").innerHTML = "<font color='red'>Password must be at least 8 characters</font>";
-    } else {
-        document.getElementById("length").innerHTML = "<font color='green'>Password is strong</font>";
-
-
-    }
-    len = document.getElementById("email").value.length;
-    // Minimum length 8
-    if (len < 1) {
-        document.getElementById("length").innerHTML = "<font color='red'>Password must be at least 8 characters</font>";
-    } else {
-        document.getElementById("length").innerHTML = "<font color='green'>Password is strong</font>";
-
-
-    }
 }
-
