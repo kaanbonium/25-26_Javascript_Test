@@ -1,10 +1,10 @@
 /* Put code for the task below */
 
-function hoverButton(){
-    button.getElementById("buttonTask1")
+function showButton(){
+    document.getElementById("buttonTask1").style.visibility = "visible";
 
 }
 
-function dissAppear(){
-    button.addEventListener("click", );
+function hideImage(){
+    document.getElementById("imageTask1").style.visibility = "hidden";
 }

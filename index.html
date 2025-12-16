@@ -26,7 +26,12 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
-					
+
+                    <!-- The Button to be clicked (3) -->
+                    <li onclick="navClicked()"><a href="#">Click Me</a></li>
+
+                    <!-- The Button to open up a new page (4) -->
+                    <li><a href="new.html">clear</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,7 +43,7 @@
 
 					<!-- Paragraphs -->
 					<h3>Basic Directions</h3>
-					<p>This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<p id="direction">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
 					<hr>
 
 					<h3>Tasks</h3>
@@ -62,13 +67,18 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onmouseover = "hoverButton()" src="assets/img/compIcon.png" id="imageTask1"><br/>
+                    <!-- When the mouse goes over, make the button visible. (1 part 1)-->
+					<img onmouseover = "showButton()" src="assets/img/compIcon.png" id="imageTask1"><br/>
 
-					<button onClick = "dissAppear()" style="display:none" id="buttonTask1">Click Me</button>
+                    <!-- When the button is clicked, hide the image. -->
+					<button onclick = "hideImage()" style="display:none" id="buttonTask1">Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
+                    <button onclick="red1()">Red</button>
+                    <button onclick="blue1()">Blue</button>
+                    <button onclick="green1()">Green</button>
 					
 					
 					<table class="table table-striped">
@@ -125,7 +135,7 @@
 							<td><input type="text" name="email" placeholder="Enter your email address." id="email"></td>
 						</tr>
 						<tr>
-							<td colspan="2"><button>Submit</button></td>
+							<td colspan="2"><button onclick="charCheck()">Submit</button></td>
 						</tr>
 					</table>
 					
